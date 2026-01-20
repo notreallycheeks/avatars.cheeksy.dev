@@ -41,6 +41,20 @@
         "gumroad": "https://iobunny.gumroad.com/l/doomerbun",
         "twitter": "https://twitter.com/iotaio"
       }
+    },
+    {
+      "name": "spadesbvn",
+      "filename": "spadesbvn.BEE",
+      "url": "https://avatars.cheeksy.dev/spadesbvn.BEE",
+      "basisVersion": "0.084D",
+      "addedDate": "2025-01-20",
+      "isEdit": true,
+      "originalBase": {
+        "name": "doomer bunny base",
+        "creator": "io",
+        "gumroad": "https://iobunny.gumroad.com/l/doomerbun",
+        "twitter": "https://twitter.com/iotaio"
+      }
     }
   ]
 }
