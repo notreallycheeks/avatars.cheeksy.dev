@@ -2,10 +2,31 @@
   "avatars": [
     {
       "name": "omegabvn",
-      "filename": "omegabvn",
-      "url": "https://avatars.cheeksy.dev/omegabvn",
+      "filename": "omegabvn.BEE",
+      "url": "https://avatars.cheeksy.dev/omegabvn.BEE",
       "basisVersion": "0.084D",
-      "addedDate": "2025-01-18"
+      "addedDate": "2025-01-19",
+      "isEdit": true,
+      "originalBase": {
+        "name": "doomer bunny base",
+        "creator": "io",
+        "gumroad": "https://iobunny.gumroad.com/l/doomerbun",
+        "twitter": "https://twitter.com/iotaio"
+      }
+    },
+    {
+      "name": "basisbvn",
+      "filename": "basisbvn.BEE",
+      "url": "https://avatars.cheeksy.dev/basisbvn.BEE",
+      "basisVersion": "0.084D",
+      "addedDate": "2025-01-20",
+      "isEdit": true,
+      "originalBase": {
+        "name": "doomer bunny base",
+        "creator": "io",
+        "gumroad": "https://iobunny.gumroad.com/l/doomerbun",
+        "twitter": "https://twitter.com/iotaio"
+      }
     }
   ]
 }

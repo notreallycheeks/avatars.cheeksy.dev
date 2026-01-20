@@ -130,6 +130,34 @@
             font-family: 'SFMono-Regular', Consolas, monospace;
             font-size: 0.875rem;
         }
+        .credit-section {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #30363d;
+            font-size: 0.875rem;
+        }
+        .credit-section .edit-badge {
+            background: #6e40c9;
+            color: #fff;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            margin-right: 0.5rem;
+        }
+        .credit-section a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        .credit-section a:hover {
+            text-decoration: underline;
+        }
+        .credit-links {
+            margin-top: 0.5rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
     </style>
 </head>
 <body>
@@ -156,6 +184,22 @@
             data.avatars.forEach(avatar => {
                 const card = document.createElement('div');
                 card.className = 'avatar-card';
+
+                let creditHtml = '';
+                if (avatar.isEdit && avatar.originalBase) {
+                    const base = avatar.originalBase;
+                    creditHtml = `
+                        <div class="credit-section">
+                            <span class="edit-badge">EDIT</span>
+                            Based on <strong>${base.name}</strong> by <strong>${base.creator}</strong>
+                            <div class="credit-links">
+                                <a href="${base.gumroad}" target="_blank">Gumroad (Original)</a>
+                                <a href="${base.twitter}" target="_blank">Twitter (@iotaio)</a>
+                            </div>
+                        </div>
+                    `;
+                }
+
                 card.innerHTML = `
                     <div class="avatar-name">${avatar.name}</div>
                     <div class="avatar-meta">
@@ -176,6 +220,7 @@
                             Copy URL
                         </button>
                     </div>
+                    ${creditHtml}
                 `;
                 list.appendChild(card);
             });
